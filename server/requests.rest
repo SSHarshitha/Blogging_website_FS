@@ -1,0 +1,35 @@
+# POST http://localhost:3000/signin
+# Content-Type: application/json
+
+# {
+#     "email": "dineshkrish0212@gmail.com",
+#     "password": "Dk@02122002"
+   
+# }
+
+# POST http://localhost:3000/signup
+# Content-Type: application/json
+
+# {
+#     "fullname":"Harshi",
+#     "email": "harshi1234@gmail.com",
+#     "password": "Harshi56&"
+   
+# }
+
+#  GET http://localhost:3000/get-upload-url
+
+
+POST http://localhost:3000/create-blog
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2U4ZTA3MjJmYTdlMDFkNzY0MThjMiIsImlhdCI6MTcxOTU2OTkyN30.ADl8bJ4k1tnENmRwF3GPwNYlEv_wCjZ_5lC_ESEH1-0
+
+{
+    "title":"this is a test title",
+    "banner":"https://tse1.mm.bing.net/th?id=OIP.LOYdMrzCqBgN9AhaREhNkgHaE8&pid=Api&rs=1&c=1&qlt=95&w=174&h=116",
+    "des": "this is a short des",
+    "content":{
+        "blocks":[1,2]
+    },
+    "tags":["tag1","tag2"]
+}
